@@ -1,0 +1,336 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Lora', serif;
+    background-color: #f8f5f0;
+    color: #333;
+}
+
+.about-page {
+    background: linear-gradient(rgba(247, 170, 170, 0.7), rgba(247, 233, 233, 0.7)),
+                url('images/rome.jpg') center/cover no-repeat fixed;
+}
+
+.privacypolicy-page{
+     background: linear-gradient(rgba(247, 170, 170, 0.7), rgba(247, 233, 233, 0.7)),
+                url('images/rome.jpg') center/cover no-repeat fixed;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+
+main.content {
+    flex: 1;
+    padding: 60px 0px;
+ 
+}
+
+
+.my-image {
+  width: 50%;
+  height: auto;
+}
+
+
+header {
+    background: #8B0000;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.cta-btn {
+    background: gold;
+    padding: 8px 14px;
+    border-radius: 4px;
+    color: #8B0000 !important;
+}
+
+
+.hero {
+    background: linear-gradient(rgba(139,0,0,0.7), rgba(139,0,0,0.7)),
+                url('images/headerindex.jpg') center/cover;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+}
+
+
+.primary-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: #8B0000;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.secondary-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background: #a11212;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.section {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.section p {
+    font-size: 18px;
+    line-height: 1.6;
+
+}
+
+.section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+
+.section ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    display: inline-block;
+    text-align: justify;
+}
+
+.section ul li::before {
+    content: "• ";
+    color: #8B0000;
+    font-weight: bold;
+}
+
+
+.values .card {
+    border: 2px solid #8B0000;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+
+.cta-section {
+    background: #8B0000;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto; 
+}
+
+
+.form {
+    max-width: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.form input,
+.form select {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.form button {
+    border: none;
+    cursor: pointer;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    flex: 1 1 calc(25% - 20px);
+    background-color: #fdf6e3;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+}
+
+.card-image {
+    width: 100%;
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    filter: sepia(0.35) contrast(1.1) brightness(0.95);
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.card:hover .card-image {
+    transform: scale(1.05);
+    filter: sepia(0.45) contrast(1.15) brightness(0.9);
+}
+
+.card h3 {
+    margin: 15px 15px 5px;
+    font-family: 'Georgia', serif;
+    color: #4a3f35;
+}
+
+.card p {
+    margin: 0 15px 15px;
+    font-family: 'Arial', sans-serif;
+    color: #5a4a3f;
+}
+
+
+.image-background {
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.image-background .overlay {
+    background: rgba(0, 0, 0, 0.55);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(197, 120, 120);
+    text-align: center;
+}
+
+
+.image-background h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    margin-bottom: 10px;
+    color: rgb(124, 96, 61);
+}
+
+
+.image-background p {
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: rgb(118, 94, 33)
+}
+
+
+.section {
+    max-width: 900px;
+    margin: auto;
+    padding: 60px 20px;
+    text-align: left;
+}
+
+
+.section h2 {
+    font-family: 'Playfair Display', serif;
+    margin-top: 30px;
+    color: #8B0000;
+}
+
+
+.section p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+.section ul {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    padding-left: 20px;
+}
+
+.section ul li {
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+
+.section h3 {
+    margin-top: 25px;
+    color: #8B0000;
+    font-size: 22px;
+}
+
+
+.primary-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 28px;
+    background: #8B0000;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.primary-btn:hover {
+    background: #a11212;
+}
